@@ -18,6 +18,10 @@ subprojects {
 
     dependencies {
         minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
+        modImplementation("com.cobblemon:fabric:${project.cobblemon_version}")
+        modImplementation("net.fabricmc:fabric-loader:${project.fabric_loader_version}")
+        modImplementation("net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}")
+        implementation("org.jetbrains.kotlin:kotlin-reflect:1.9.23")
         // The following line declares the mojmap mappings, you may use other mappings as well
         mappings loom.officialMojangMappings()
         // The following line declares the yarn mappings you may select this one as well.
